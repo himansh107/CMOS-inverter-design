@@ -2,7 +2,8 @@ Design and analysis of CMOS inverter
 
 This project has been created using gpdk 90nm library given with Cadence virtuoso. I have done the transient and DC analysis of the inverter and have calculated various parameters like noise margin, power consumption and propagation delay. I have also performed the Layout vs Schematic of the design and shown the results in the pictures that follow :
 
-![](Aspose.Words.e03009f2-fc7e-4195-aedb-da8bbe913288.001.png)Noise margin
+Noise margin
+![](Aspose.Words.e03009f2-fc7e-4195-aedb-da8bbe913288.001.png)
 
 The above figure shows two graphs, the upper graph is the transfer characteristics and the lower graph is the derivative of the above graph with respect to input. In order to calculate the noise margin we need four parameters : 
 
@@ -21,7 +22,8 @@ Thus,
 
 Power consumption
 
-![](Aspose.Words.e03009f2-fc7e-4195-aedb-da8bbe913288.002.png)Power consumption consists of static, dynamic and leakage power consumption. In order to calculate the total power consumption I have found the average value of the multiplication of the graphs of Vout and drain current. 
+![](Aspose.Words.e03009f2-fc7e-4195-aedb-da8bbe913288.002.png)
+Power consumption consists of static, dynamic and leakage power consumption. In order to calculate the total power consumption I have found the average value of the multiplication of the graphs of Vout and drain current. 
 
 
 
@@ -60,14 +62,17 @@ Tr = 50ps : Tpd = 6.65ps
 Tr = 10ps : Tpd = 4.6223ps
 
 Rise time
+Rise time is the measure of the speed of the circuit. If rise time is low then the circuit is considered to be fast. Below are some graphs showing the effect of Load capacitance, power supply & w/l ratio on rise time. 
 
-![](Aspose.Words.e03009f2-fc7e-4195-aedb-da8bbe913288.005.png)![](Aspose.Words.e03009f2-fc7e-4195-aedb-da8bbe913288.006.png)Rise time is the measure of the speed of the circuit. If rise time is low then the circuit is considered to be fast. Below are some graphs showing the effect of Load capacitance, power supply & w/l ratio on rise time. 
+![](Aspose.Words.e03009f2-fc7e-4195-aedb-da8bbe913288.005.png)![](Aspose.Words.e03009f2-fc7e-4195-aedb-da8bbe913288.006.png)
+
 
 ![](Aspose.Words.e03009f2-fc7e-4195-aedb-da8bbe913288.007.png)
 
 Layout Vs Schematic
 
-![](Aspose.Words.e03009f2-fc7e-4195-aedb-da8bbe913288.008.png)As we can see from the above graph the response for layout circuit is slower that the schematic. This is prominently because of:
+![](Aspose.Words.e03009f2-fc7e-4195-aedb-da8bbe913288.008.png)
+As we can see from the above graph the response for layout circuit is slower that the schematic. This is prominently because of:
 
 - Parasitic capacitances and resistances from the metal wires and diffusion regions are not shown in the schematic but will be present in the physical layout. These can impact performance but do not change the logical function.
 - The layout includes all the non-idealities that come from fabricating the circuit physically, such as uneven diffusion widths, contacts misalignments, wire rounding, etc. The schematic is an idealized representation.
