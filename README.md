@@ -1,8 +1,8 @@
-Design and analysis of CMOS inverter
+#Design and analysis of CMOS inverter
 
 This project has been created using gpdk 90nm library given with Cadence virtuoso. I have done the transient and DC analysis of the inverter and have calculated various parameters like noise margin, power consumption and propagation delay. I have also performed the Layout vs Schematic of the design and shown the results in the pictures that follow :
 
-Noise margin<br>
+##Noise margin<br>
 ![](Aspose.Words.e03009f2-fc7e-4195-aedb-da8bbe913288.001.png)<br>
 
 The above figure shows two graphs, the upper graph is the transfer characteristics and the lower graph is the derivative of the above graph with respect to input. In order to calculate the noise margin we need four parameters : 
@@ -20,10 +20,9 @@ Thus,
 
 **NMH (Noise Margin for HIGH)** = VOH – VIH = 
 
-Power consumption
-
+##Power consumption<br>
+Power consumption consists of static, dynamic and leakage power consumption. In order to calculate the total power consumption I have found the average value of the multiplication of the graphs of Vout and drain current.<br>
 ![](Aspose.Words.e03009f2-fc7e-4195-aedb-da8bbe913288.002.png)<br>
-Power consumption consists of static, dynamic and leakage power consumption. In order to calculate the total power consumption I have found the average value of the multiplication of the graphs of Vout and drain current. 
 
 
 
@@ -39,39 +38,40 @@ Power consumption consists of static, dynamic and leakage power consumption. In 
 
 
 
-From the graph we can see the average power consumption is 431.9 Nw. Now let us see the effect W/L ratio & Vdd on power consumption.
+
+From the graph we can see the average power consumption is 431.9 Nw. Now let us see the effect W/L ratio & Vdd on power consumption.<br>
 
 
 
 
 
-![](Aspose.Words.e03009f2-fc7e-4195-aedb-da8bbe913288.003.png)![](Aspose.Words.e03009f2-fc7e-4195-aedb-da8bbe913288.004.png)
+![](Aspose.Words.e03009f2-fc7e-4195-aedb-da8bbe913288.003.png)![](Aspose.Words.e03009f2-fc7e-4195-aedb-da8bbe913288.004.png)<br>
 
-Propagation Delay
+Propagation Delay<br>
 
 - upon increasing W/L ratio, propagation delay decreases (values calculated for Tr = 10ps)
 
-w/l = 120/100; Tpd = 4.6223ps
+    &ensp;w/l = 120/100; Tpd = 4.6223ps
 
-w/l = 240/100; Tpd = 3.7765ps
+    &ensp;w/l = 240/100; Tpd = 3.7765ps
 
 - upon reducing rise & fall time, propagation delay decreases
 
-Tr = 50ps : Tpd = 6.65ps
+   &ensp; Tr = 50ps : Tpd = 6.65ps
 
-Tr = 10ps : Tpd = 4.6223ps
+    &ensp;Tr = 10ps : Tpd = 4.6223ps
 
-Rise time
-Rise time is the measure of the speed of the circuit. If rise time is low then the circuit is considered to be fast. Below are some graphs showing the effect of Load capacitance, power supply & w/l ratio on rise time. 
+Rise time<br>
+Rise time is the measure of the speed of the circuit. If rise time is low then the circuit is considered to be fast. Below are some graphs showing the effect of Load capacitance, power supply & w/l ratio on rise time. <br>
 
-![](Aspose.Words.e03009f2-fc7e-4195-aedb-da8bbe913288.005.png)![](Aspose.Words.e03009f2-fc7e-4195-aedb-da8bbe913288.006.png)
+![](Aspose.Words.e03009f2-fc7e-4195-aedb-da8bbe913288.005.png)![](Aspose.Words.e03009f2-fc7e-4195-aedb-da8bbe913288.006.png)<br>
 
 
-![](Aspose.Words.e03009f2-fc7e-4195-aedb-da8bbe913288.007.png)
+![](Aspose.Words.e03009f2-fc7e-4195-aedb-da8bbe913288.007.png)<br>
 
-Layout Vs Schematic
+Layout Vs Schematic<br>
 
-![](Aspose.Words.e03009f2-fc7e-4195-aedb-da8bbe913288.008.png)
+![](Aspose.Words.e03009f2-fc7e-4195-aedb-da8bbe913288.008.png)<br>
 As we can see from the above graph the response for layout circuit is slower that the schematic. This is prominently because of:
 
 - Parasitic capacitances and resistances from the metal wires and diffusion regions are not shown in the schematic but will be present in the physical layout. These can impact performance but do not change the logical function.
