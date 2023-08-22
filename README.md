@@ -3,7 +3,7 @@
 This project has been created using gpdk 90nm library given with Cadence virtuoso. I have done the transient and DC analysis of the inverter and have calculated various parameters like noise margin, power consumption and propagation delay. I have also performed the Layout vs Schematic of the design and shown the results in the pictures that follow :
 
 ***Noise margin***<br><br>
-![](./images/noise margin.png)<br>
+![](Aspose.Words.e03009f2-fc7e-4195-aedb-da8bbe913288.001.png)<br>
 
 The above figure shows two graphs, the upper graph is the transfer characteristics and the lower graph is the derivative of the above graph with respect to input. In order to calculate the noise margin we need four parameters : 
 
