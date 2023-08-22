@@ -16,9 +16,9 @@ The above parameters are shown in the graph. Note that VIL and VOL are calculate
 
 Thus,
 
-**NML (Noise Margin for Low)** = VIL – VOL = 0.3843 V
+*NML (Noise Margin for Low)* = VIL – VOL = **0.3843 V**
 
-**8NMH (Noise Margin for HIGH)** = VOH – VIH = 0.91329 V
+*NMH (Noise Margin for HIGH)* = VOH – VIH = **0.91329 V**
 
 ***Power consumption***<br><br>
 Power consumption consists of static, dynamic and leakage power consumption. In order to calculate the total power consumption I have found the average value of the multiplication of the graphs of Vout and drain current.<br>
