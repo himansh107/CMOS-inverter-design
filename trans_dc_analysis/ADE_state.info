@@ -1,0 +1,3 @@
+projectDir = '"~/simulation"
+designInfo = '("cmos_inverter" "cmos_sim" "schematic" "spectre")
+descriptionText = "None"
