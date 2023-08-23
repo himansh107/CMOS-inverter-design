@@ -6,7 +6,7 @@ The transistor level circuit of a CMOS<br><br>
 ![](cmos_circuit.png) <br>
 
 The testbench for the design is show below :<br><br>
-![](testbench.png) <br>
+![](testbench.png) <br><br>
 ***Noise margin***<br><br>
 ![](Aspose.Words.e03009f2-fc7e-4195-aedb-da8bbe913288.001.png)<br>
 
