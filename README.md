@@ -48,8 +48,8 @@ From the graph we can see the average power consumption is 431.9 Nw. Now let us 
 ![](Aspose.Words.e03009f2-fc7e-4195-aedb-da8bbe913288.003.png)![](Aspose.Words.e03009f2-fc7e-4195-aedb-da8bbe913288.004.png)<br>
 
 ***Effect of W/L ratio***<br><br>
- w/l pmos > w/l nmos then cmos acts as a strong pullup network <br><br>
- w/l pmos < w/l nmos then cmos acts as a strong pulldown network<br>
+ - w/l pmos > w/l nmos then cmos acts as a strong pullup network <br>
+ - w/l pmos < w/l nmos then cmos acts as a strong pulldown network<br>
 ![](effect_of_W_L_ratio_on_output.png)<br>
 
 ***Propagation Delay***<br><br>
