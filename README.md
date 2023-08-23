@@ -1,7 +1,12 @@
 **Design and analysis of CMOS inverter**
 
-This project has been created using gpdk 90nm library given with Cadence virtuoso. I have done the transient and DC analysis of the inverter and have calculated various parameters like noise margin, power consumption and propagation delay. I have also performed the Layout vs Schematic of the design and shown the results in the pictures that follow :
+This project has been created using gpdk 90nm library given with Cadence virtuoso. I have done the transient and DC analysis of the inverter and have calculated various parameters like noise margin, power consumption and propagation delay. I have also performed the Layout vs Schematic of the design and showed the results in the pictures that follow :<br><br>
 
+The transistor level circuit of a CMOS<br><br>
+![](cmos_circuit.png) <br>
+
+The testbench for the design is show below :<br><br>
+![](testbench.png) <br>
 ***Noise margin***<br><br>
 ![](Aspose.Words.e03009f2-fc7e-4195-aedb-da8bbe913288.001.png)<br>
 
